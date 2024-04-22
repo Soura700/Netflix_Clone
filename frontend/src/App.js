@@ -11,9 +11,9 @@ function App() {
     // <div className="App bg-slate-500">
     <div className="App bg-white home">
       {/* <ProgramGuide/> */}
-      {/* <Home/> */}
+      <Home/>
       {/* <Footer/> */}
-      <Login/>
+      {/* <Login/> */}
     </div>
   );
 }
