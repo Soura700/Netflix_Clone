@@ -10,6 +10,7 @@ const Hero = ({ moviePosters }) => {
   useEffect(() => {
     const mov = moviePosters[Math.floor(Math.random() * moviePosters.length)];
 
+
     
 
     fetch(
@@ -29,6 +30,7 @@ const Hero = ({ moviePosters }) => {
 
     setMovie(mov);
   }, [moviePosters]);
+
 
   return (
     <div>
