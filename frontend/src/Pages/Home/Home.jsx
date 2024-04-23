@@ -58,12 +58,13 @@ function Home() {
   }
 
   console.log("Hello World");
+  console.log(moviePosters);
   console.log(trendingNow);
 
   return (
     <>
       <main className="relative bg-gradient-to-b from-gray-900/10 to-[#010511]">
-        {/* <Hero moviePosters={moviePosters} /> */}
+        <Hero moviePosters={moviePosters} />
         <section className="container pb-32">
           <Row title="Trending Now" movies={trendingNow} />
           <Row title="Trending Now" movies={trendingNow} />
