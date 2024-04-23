@@ -5,7 +5,6 @@ import Hero from "../../components/Hero/Hero";
 import Row from "../../components/Row/Row";
 
 function Home() {
-
   const [moviePosters, setMoviePosters] = useState(null);
   const [trendingNow, setTrendingNow] = useState([]);
   const [topRated, setTopRated] = useState([]);
@@ -15,7 +14,6 @@ function Home() {
   const [romanceMovies, setRomanceMovies] = useState([]);
   const [documentaries, setDocumentaries] = useState([]);
   const [isLoading, setIsLoading] = useState(true); // Add loading state
-
 
   useEffect(() => {
     const fetchData = async () => {
@@ -54,7 +52,7 @@ function Home() {
   }, []);
 
   console.log("moviePosters", moviePosters); // Log state inside useEffect
-  
+
   if (isLoading) {
     return <div>Loading...</div>;
   }
@@ -67,7 +65,9 @@ function Home() {
       <main className="relative bg-gradient-to-b from-gray-900/10 to-[#010511]">
         {/* <Hero moviePosters={moviePosters} /> */}
         <section className="container pb-32">
-        <Row title="Trending Now" movies={trendingNow} />
+          <Row title="Trending Now" movies={trendingNow} />
+          <Row title="Trending Now" movies={trendingNow} />
+          <Row title="Trending Now" movies={trendingNow} />
         </section>
       </main>
     </>
