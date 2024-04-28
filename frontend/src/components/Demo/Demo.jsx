@@ -243,7 +243,7 @@ const Thumbnail = ({ movie }) => {
               trailer ? "p-1 md:p-2.5" : "p-3 md:p-6"
             } z-10 ${trailer ? "pb-8" : "pb-6"}`}
           >
-            <div className="flex mb-2">
+            <div className={`flex mb-2`}>
               <PlayArrow className="border-white border-2 rounded-full p-1 mr-2" />
               <Add className="border-white border-2 rounded-full p-1 mr-2" />
               <ThumbUpAltOutlined className="border-white border-2 rounded-full p-1 mr-2" />
