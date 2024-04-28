@@ -1,0 +1,20 @@
+FROM node:16.16.0
+
+WORKDIR /server
+
+COPY package.json .
+
+RUN  npm install
+
+RUN npm install nodemon --save-dev   # Add this line to install nodemon
+
+
+COPY . .
+
+EXPOSE 5000
+
+CMD [ "node" , "server.js" ]
+
+
+
+
