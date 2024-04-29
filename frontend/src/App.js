@@ -9,7 +9,8 @@ import Login from './Pages/Login/Login';
 function App() {
   return (
     // <div className="App bg-slate-500">
-    <div className="App bg-white home">
+    // <div className="App bg-white home">
+    <div className="App">
       {/* <ProgramGuide/> */}
       <Home/>
       {/* <Footer/> */}

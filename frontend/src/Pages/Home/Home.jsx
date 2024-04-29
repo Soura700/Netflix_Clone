@@ -3,6 +3,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import requests from "../../utils/request";
 import Hero from "../../components/Hero/Hero";
 import Row from "../../components/Row/Row";
+import TopMovies from "../../components/TopMovies/TopMovies"
 
 function Home() {
   const [moviePosters, setMoviePosters] = useState(null);
@@ -57,19 +58,17 @@ function Home() {
     return <div>Loading...</div>;
   }
 
-  console.log("Hello World");
-  console.log(moviePosters);
-  console.log(trendingNow);
-
   return (
     <>
       <main className="relative bg-gradient-to-b from-gray-900/10 to-[#010511]">
         <Hero moviePosters={moviePosters} />
         <section className="pb-32">
           <Row title="Trending Now" movies={trendingNow} />
-          <Row title="Trending Now" movies={trendingNow} />
-          <Row title="Trending Now" movies={trendingNow} />
+          {/* <Row title="Trending Now" movies={trendingNow} />
+          <Row title="Trending Now" movies={trendingNow} /> */}
+          <TopMovies/>
         </section>
+        {/* <TopMovies/> */}
       </main>
     </>
   );

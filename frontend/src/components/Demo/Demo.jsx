@@ -84,10 +84,9 @@ const Thumbnail = ({ movie }) => {
             </div>
             <div className="text-xs mb-2">
               Lorem ipsum dolor sit amet consect eaque illo veniam eligen
-              numquam modi error!
             </div>
-            <div className="text-sm text-gray-400">Action</div>
-            <p className="text-sm md:text-sm ">{movie.title}</p>
+            {/* <div className="text-sm text-gray-400">Action</div>
+            <p className="text-sm md:text-sm ">{movie.title}</p> */}
           </div>
         )}
       </div>
