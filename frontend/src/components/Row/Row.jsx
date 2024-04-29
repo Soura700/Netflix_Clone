@@ -51,8 +51,7 @@
 
 // export default Row;
 
-
-import React, { useRef , useState } from "react";
+import React, { useRef, useState } from "react";
 import { BiChevronLeft, BiChevronRight } from "react-icons/bi";
 import Thumbnail from "../Demo/Demo";
 
@@ -81,15 +80,27 @@ const Row = ({ title, movies }) => {
   };
 
   return (
-    <div className="space-y-0.5 md:space-y-2" style={{ height: '500px', width: '100%' }}>
-      <h2 className="w-56 mt-6 cursor-pointer text-sm font-semibold text-[#e5e5e5] transition duration-200 hover:text-white md:text-2xl">
+    <div
+      className="space-y-0.5 md:space-y-2"
+      // style={{ height: "500px", width: "100%" }}
+    >
+      {/* <h2 className="w-56 mt-6 cursor-pointer text-sm font-semibold text-[#e5e5e5] transition duration-200 hover:text-white md:text-2xl">
         {title}
-      </h2>
+      </h2> */}
+
+      {/* <h2 className="w-56 mt-6 cursor-pointer text-sm font-semibold text-white transition duration-200 hover:text-white md:text-2xl">
+        {title}
+      </h2> */}
 
       <div
-        className={`group relative md:ml-2 ${scrolling ? "pointer-events-none" : ""}`}
+        className={`group relative md:ml-2 ${
+          scrolling ? "pointer-events-none" : ""
+        }`}
         onScroll={handleScroll}
       >
+        <h2 className="w-56 mt-6 cursor-pointer text-sm font-semibold text-white transition duration-200 hover:text-white md:text-2xl">
+          {title}
+        </h2>
         <BiChevronLeft
           className="absolute top-0 bottom-0 left-2 z-40 m-auto h-9 w-9 cursor-pointer text-gray-400 group-hover:opacity-100"
           onClick={() => handleClick("left")}

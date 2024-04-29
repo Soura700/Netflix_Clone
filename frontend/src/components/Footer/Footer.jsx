@@ -1,24 +1,24 @@
 import React from "react";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import YouTubeIcon from "@mui/icons-material/YouTube";
+// import FacebookIcon from "@mui/icons-material/Facebook";
+// import TwitterIcon from "@mui/icons-material/Twitter";
+// import InstagramIcon from "@mui/icons-material/Instagram";
+// import YouTubeIcon from "@mui/icons-material/YouTube";
 const Footer = () => {
   return (
     <div className="bg-black h-90 w-full">
       <div className="p-10 pl-40">
         <div className="flex space-x-4">
           <span className="text-blue-600 mt-5 ml-10">
-            <FacebookIcon style={{ fontSize: "2rem" }} />
+            {/* <FacebookIcon style={{ fontSize: "2rem" }} /> */}
           </span>
           <span className="text-blue-600 mt-5 ml-10">
-            <InstagramIcon style={{ fontSize: "2rem" }} />
+            {/* <InstagramIcon style={{ fontSize: "2rem" }} /> */}
           </span>
           <span className="text-blue-600 mt-5 ml-10">
-            <TwitterIcon style={{ fontSize: "2rem" }} />
+            {/* <TwitterIcon style={{ fontSize: "2rem" }} /> */}
           </span>
           <span className="text-blue-600 mt-5 ml-10">
-            <YouTubeIcon style={{ fontSize: "2rem" }} />
+            {/* <YouTubeIcon style={{ fontSize: "2rem" }} /> */}
           </span>
         </div>
         <div className="flex flex-row mt-8 text-lg ">
