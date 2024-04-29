@@ -5,6 +5,10 @@ import Home from './Pages/Home/Home';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import Login from './Pages/Login/Login';
+import Account from './components/Account/Account';
+import MoviePopup from './components/MoviePopup/MoviePopup';
+
+
 
 function App() {
   return (
@@ -15,6 +19,8 @@ function App() {
       <Home/>
       {/* <Footer/> */}
       {/* <Login/> */}
+      {/* <Account/> */}
+      {/* <MoviePopup/> */}
     </div>
   );
 }
